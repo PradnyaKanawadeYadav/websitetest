@@ -20,7 +20,7 @@
       display: flex;
       flex-grow: 1; // Ensures items are spaced properly
       justify-content: center; // Center the nav items
-      gap: 50px; // Spacing between menu items
+      gap: 2px; // Spacing between menu items
   
       .nav-item {
         position: relative;
@@ -52,7 +52,6 @@
     .btn-try {
       background: rgba(255, 255, 255, 1);
       color: black;
-      font-family: 'inter';
       padding: 10px 20px;
       border-radius: 10px;
       font-weight: 600;

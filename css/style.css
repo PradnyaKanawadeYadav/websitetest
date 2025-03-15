@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap");
 .header-hero {
   background: url("../images/jpg/header-background.jpeg") no-repeat center center;
   background-size: cover;
@@ -27,7 +29,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  gap: 50px;
+  gap: 2px;
 }
 .navbar .navbar-nav .nav-item {
   position: relative;
@@ -55,7 +57,6 @@
 .navbar .btn-try {
   background: rgb(255, 255, 255);
   color: black;
-  font-family: "inter";
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: 600;
@@ -92,6 +93,155 @@
   }
 }
 
+.footer {
+  background: #0A0A0A;
+  color: white;
+  padding: 50px 0px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 5px;
+  }
+}
+
+.newsletter-container {
+  background: rgba(24, 140, 255, 0.2);
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-container p {
+  font-family: DM Sans;
+  font-weight: 100;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgb(208, 218, 245);
+  text-align: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.newsletter-input {
+  display: flex;
+  background: black;
+  border-radius: 30px;
+  padding: 5px;
+  align-items: center;
+}
+
+.newsletter-input input {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: rgb(208, 218, 245);
+  outline: none;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.newsletter-input button {
+  background: #007BFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.footer-logo img {
+  width: 361px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: left;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column a {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-decoration: none;
+  color: rgb(208, 218, 245);
+}
+
+.footer-column h5, .footer-column .h5 {
+  color: rgb(208, 218, 245);
+  margin-bottom: 10px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 40px;
+  }
+  .footer-column {
+    min-width: 150px;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

@@ -1,0 +1,10 @@
+@import "variables";
+@import "header";
+@import "components";
+@import "base";
+@import "module/hero_section";
+@import "navbar";     // Navbar styles
+
+// Import Bootstrap (after your custom styles)
+@import "../node_modules/bootstrap/scss/bootstrap";
+

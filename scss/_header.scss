@@ -1,0 +1,11 @@
+.header-hero {
+    background: url("../images/jpg/header-background.jpeg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; // Ensures full-screen coverage
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  

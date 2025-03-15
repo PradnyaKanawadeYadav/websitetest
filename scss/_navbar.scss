@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.navbar {
+    background: transparent;
+    padding: 15px 60px; // Reduced left & right space
+  
+    .container {
+      max-width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .navbar-brand img {
+      width: 207px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-grow: 1; // Ensures items are spaced properly
+      justify-content: center; // Center the nav items
+      gap: 50px; // Spacing between menu items
+  
+      .nav-item {
+        position: relative;
+  
+        .nav-link {
+          color: white;
+          font-family: Inter;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 100%;
+         letter-spacing: 0%;
+         text-align: right;
+         padding: 8px 12px;
+          transition: all 0.3s ease-in-out;
+  
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-offset: 10%;
+            text-decoration-thickness: 0%;
+            text-decoration-skip-ink: auto; 
+  
+          }
+        }
+      }
+    }
+  
+    .btn-try {
+      background: rgba(255, 255, 255, 1);
+      color: black;
+      font-family: 'inter';
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background: lightblue;
+      }
+    }
+  
+    // Mobile & Tablet View
+    @media (max-width: 992px) {
+      padding: 10px 20px;
+  
+      .navbar-toggler {
+        border: none;
+        outline: none;
+  
+        .navbar-toggler-icon {
+          width: 25px;
+          height: 25px;
+          background-size: contain;
+          filter: invert(1);
+        }
+      }
+  
+      .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9); // Dark background for dropdown
+        padding: 15px;
+
+      }
+  
+      .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+  
+      .btn-try {
+        display: none;
+    }
+    }
+  }
+  

@@ -1,0 +1,151 @@
+.custom-section {
+    padding: 60px 0;
+    text-align: center;
+    background: url('../images/jpg/Grow\ Section\ BG\ -\ Retail.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; // Ensures full-screen coverage
+    display: flex;
+
+
+    .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+
+    .small-btn {
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 36px;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    .section-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $primary-color;
+        font-family: $font-primary;
+    }
+
+    .highlight{
+        font-family: $font-primary;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(253, 102, 38, 1);
+    }
+
+    /* Custom Tabs */
+    .custom-tabs {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+
+        .nav-item {
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.4);
+            font-family: $font-primary;
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            font-weight: 500;
+            padding: 10px 20px;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            &.active {
+                color: rgba(255, 255, 255, 1);
+                font-weight: bold;
+                background: transparent;
+
+                /* Bottom border underline for active tab */
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 200px;
+                    height: 1px;
+                    background: rgba(255, 255, 255, 1);
+                    left: -50px;
+                    bottom: -2px;
+                }
+            }
+        }
+    }
+
+    /* Tab Content */
+    .tab-content {
+        margin-top: 20px;
+        .tab-pane {
+            .row {
+                margin-top: 60px;
+                column-gap: 20px;
+                justify-content:space-evenly;
+             .col-md-4{
+                border: 1px solid;
+                display: flex;
+                flex-flow: column;
+                text-align: left;
+                border-color: #EFEFEF3B;
+                width: 316px;
+                height: 261px;
+                border-radius: 20px;
+                padding: 15px 20px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(13.3px);
+                    }   
+            } 
+            h4 {
+                font-size: 18px;
+                color: $primary-color;
+                margin-bottom: 15px;
+                font-weight: 200;
+
+            }
+            p {
+                font-size: 15px;
+                color: #ddd;
+                gap:3px;
+            }
+        }
+    }
+
+    /* Bottom Paragraph */
+    .section-description {
+        font-size: 28px;
+        max-width: 70%;
+        font-weight: 500;
+        
+        font-family: $font-primary;       
+        margin-top: 50px;
+        background: linear-gradient(90deg, #ABDFDD 9.18%, #FEA887 53.87%, #FC6D7B 94.5%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Full viewport height */
+            text-align: center;
+            margin-left: auto; 
+            margin-right: auto;
+                
+    }
+}

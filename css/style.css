@@ -31,6 +31,142 @@ p {
   padding-top: 30px;
 }
 
+.custom-section {
+  padding: 60px 0;
+  text-align: center;
+  background: url("../images/jpg/Grow Section BG - Retail.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* Custom Tabs */
+  /* Tab Content */
+  /* Bottom Paragraph */
+}
+.custom-section .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+.custom-section .small-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+}
+.custom-section .section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+.custom-section .highlight {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(253, 102, 38);
+}
+.custom-section .custom-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.custom-section .custom-tabs .nav-item {
+  margin: 0 15px;
+}
+.custom-section .custom-tabs .nav-link {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Inter", sans-serif;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px 20px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.custom-section .custom-tabs .nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+.custom-section .custom-tabs .nav-link.active {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: transparent;
+  /* Bottom border underline for active tab */
+}
+.custom-section .custom-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  left: -50px;
+  bottom: -2px;
+}
+.custom-section .tab-content {
+  margin-top: 20px;
+}
+.custom-section .tab-content .tab-pane .row {
+  margin-top: 60px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-evenly;
+}
+.custom-section .tab-content .tab-pane .row .col-md-4 {
+  border: 1px solid;
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  border-color: rgba(239, 239, 239, 0.231372549);
+  width: 316px;
+  height: 261px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(13.3px);
+          backdrop-filter: blur(13.3px);
+}
+.custom-section .tab-content .tab-pane h4, .custom-section .tab-content .tab-pane .h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+.custom-section .tab-content .tab-pane p {
+  font-size: 15px;
+  color: #ddd;
+  gap: 3px;
+}
+.custom-section .section-description {
+  font-size: 28px;
+  max-width: 70%;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #ABDFDD 9.18%, #FEA887 53.87%, #FC6D7B 94.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Full viewport height */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
   text-align: left;
   padding: 0px 0px;
@@ -87,7 +223,7 @@ p {
 }
 .hero .info-box {
   border: 1px solid;
-  border-image-source: linear-gradient(184.07deg, rgba(239, 239, 239, 0.23) 5.24%, rgba(239, 239, 239, 0.06) 92.86%);
+  border-color: rgba(239, 239, 239, 0.231372549);
   width: 316px;
   height: 141px;
   border-radius: 20px;

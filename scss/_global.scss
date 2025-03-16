@@ -1,0 +1,22 @@
+// _global.scss
+
+@import "variables"; // Import global variables
+
+body {
+    font-family: $font-primary;
+    color: $text-primary;
+    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: 600;
+    color: $primary-color;
+}
+
+p {
+    font-family: $font-secondary;
+    color: $text-secondary;
+}

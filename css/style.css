@@ -2,6 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.52);
+}
+
 .header-hero {
   background: url("../images/jpg/header-background.jpeg") no-repeat center center;
   background-size: cover;
@@ -14,7 +33,9 @@
 
 .hero {
   text-align: left;
-  padding: 50px 0px;
+  padding: 0px 0px;
+  margin-bottom: 10px;
+  position: relative;
 }
 .hero .btn-primary {
   background-color: #007bff;
@@ -58,30 +79,40 @@
 }
 .hero .hero-images .big-image {
   width: 100%;
-  max-width: 1206px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero .hero-images .mobile-image {
-  position: absolute;
-  width: 18%;
-  max-width: 200px;
-  right: 8%;
-  bottom: -40px;
+  max-width: 1456px;
+  height: 808px;
+  position: relative;
+  z-index: 1;
+  padding: 0px;
 }
 .hero .info-box {
   border: 1px solid;
   border-image-source: linear-gradient(184.07deg, rgba(239, 239, 239, 0.23) 5.24%, rgba(239, 239, 239, 0.06) 92.86%);
   width: 316px;
-  height: 161px;
-  gap: 0px;
+  height: 141px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px 20px;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(13.3px);
           backdrop-filter: blur(13.3px);
+  position: relative;
+  bottom: 104px;
+  transform: translate(0%);
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.hero .info-box h4, .hero .info-box .h4 {
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.hero .info-box p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400px;
+  width: 90%;
 }
 
 @keyframes scrollImage {
@@ -113,18 +144,17 @@
     text-align: center;
   }
   .hero .hero-images .big-image {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    height: auto;
   }
-  .hero .hero-images .mobile-image {
-    right: 5%;
-    width: 22%;
-    max-width: 180px;
+  .hero .info-box {
+    position: relative;
+    bottom: 0px;
   }
 }
 @media (max-width: 768px) {
   .hero {
-    padding: 30px 15px;
+    padding: 0px;
   }
   .hero .hero-heading {
     font-size: 28px;
@@ -134,18 +164,6 @@
     font-size: 14px;
     text-align: center;
   }
-  .hero .hero-images .big-image {
-    width: 100%;
-  }
-  .hero .hero-images .mobile-image {
-    right: 2%;
-    width: 25%;
-  }
-  .hero .info-box {
-    font-size: 14px;
-    height: auto;
-    padding: 15px;
-  }
 }
 @media (max-width: 576px) {
   .hero .hero-heading {
@@ -153,9 +171,6 @@
   }
   .hero .hero-subtext {
     font-size: 12px;
-  }
-  .hero .hero-images .mobile-image {
-    width: 30%;
   }
 }
 .navbar {
